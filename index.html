@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi de Lecture</title>
+</head>
+<body>
+
+<h1>Application de Suivi de Lecture</h1>
+<button id="ajoutLivre">Ajouter un livre</button>
+
+<form id="bookForm" style="display: none;">
+    <label for="title">Titre du Livre:</label><br>
+    <input type="text" id="title" placeholder="exemple: contemplations" name="title"><br><br>
+    <label for="author">Auteur:</label><br>
+    <input type="text" id="author" placeholder="exemple: Victor Hugo" name="author"><br><br>
+    <button type="button" id="envoyer">Ajouter au Suivi</button>
+</form>
+
+<table id="outputTable" border="1" style="width:100%; margin-top:20px; display:none;">
+    <thead>
+        <tr>
+            <th>Titre du Livre</th>
+            <th>Auteur</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="output"></tbody>
+</table>
+
+<script src="index.js"></script>
+
+</body>
+</html>
+
